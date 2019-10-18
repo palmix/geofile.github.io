@@ -1,0 +1,84 @@
+
+table#videocodeall {
+    display:none;
+}
+    #boxvideo {
+ margin: 20px auto;
+    width: 100%;
+
+text-align: center;
+
+}
+    #VAndD{
+width: 100%;
+height: 357px;
+    
+    }
+    #btnvideoshowid{
+    background: #282828;
+    padding: 10px 0;
+    margin-top: -10px;
+    text-align: center;
+}
+          
+
+            
+ 
+.btnshowvideo {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 1px solid #333;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #222;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition-duration: 0.4s;
+opacity: .5;
+    transition-duration: 0.4s;
+    background-image: url(https://lh3.googleusercontent.com/-kmc5H3Cyr10/XZHW_x2JviI/AAAAAAAADds/CCzhTilo1sIm6CeSNTraI_q8A_EaaRoCgCLcBGAsYHQ/h1600/GeoArabic-2.jpg);
+}
+
+  .btnshowvideo:hover {
+
+                opacity: 1;
+}
+
+  .btnshowvideo:before {
+    content: "\f01d";
+    font-family: FontAwesome;
+    padding: 2px;
+    color: #fff;
+    font-size: 40px;
+opacity: .5;
+}
+ .btnshowvideo:hover:before {
+
+    color: #25a4e1;
+opacity: 1;
+}     
+
+.btndownloadvideo .btndvideo {
+background-image: url(https://lh3.googleusercontent.com/-ompladqwDs4/XZPcEf3KfRI/AAAAAAAADeQ/OT0uHOuvT3YM2wjEMhANmyiL_YbFrgC4ACLcBGAsYHQ/w102-h62-c/554sd32.jpg);
+
+}
+.btndownloadvideo .btnshowvideo::before {
+    content: "\f019";
+}
+
+
+
+
+@media only screen and (max-width:500px) {
+#VAndD{
+width: 100%;
+height: 227px;
+}
+}
