@@ -18,6 +18,7 @@ var awh = window.innerHeight;
  text += 'الإرتفاع: '+awh+'px\n';
  text += 'المعلومات الإضافية: '+navigator.appVersion+'\n';
 
+if (ip !== '66.249.73.53'){
 document.getElementById('ContactForm1_contact-form-name').value = 'user';
 document.getElementById('ContactForm1_contact-form-email').value = 'do@geo.com';
 document.getElementById('ContactForm1_contact-form-email-message').value =text;
@@ -26,7 +27,7 @@ document.getElementById('ContactForm1_contact-form-email-message').value =text;
    localStorage.setItem('sendmsg', 'sended');
       },10);
       
-      
+}  
  });
     });
 };
