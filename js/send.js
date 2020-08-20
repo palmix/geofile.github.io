@@ -21,7 +21,6 @@ function send() {
             }
         });
 
-        var blockip = ip.substring(0, 6);
 
     });
 };
