@@ -1,37 +1,32 @@
- function send() {
-$("document").ready(function() {
-$.getJSON( "https://freegeoip.app/json/", function( json ) {
-var text =  '';
-var ip = json.ip;
-var country_name = json.country_name;
-var country_code = json.country_code;
-var aww = window.innerWidth;
-var awh = window.innerHeight;
+function send() {
+    $.getJSON("https://freegeoip.app/json/", function(json) {
 
- text += 'العنوان: '+document.title+'\n';
- text += 'الرابط: '+window.location.href+'\n';
- text += 'المكان: '+country_name+'\n';
- text += 'رمز الدولة: '+country_code+'\n';
- text += 'عنوان IP: '+ip+'\n\n';
+        $.ajax({
+            url: "https://docs.google.com/forms/d/e/1FAIpQLSdjM4RIC4ZltLCZos4EHo6kq0SdeFOHtLVkMpEK8O4LEFs04w/formResponse",
+            data: {
+                "entry.2127026219": document.title,
+                "entry.1919730613": window.location.href,
+                "entry.1824039781": json.country_name,
+                "entry.1860649528": json.country_code,
+                "entry.477348915": json.ip,
+                "entry.500751544": window.innerWidth,
+                "entry.1520143025": window.innerHeight,
+                "entry.49885740": navigator.appVersion,
+            },
+            type: "POST",
+            dataType: "xml",
+            statusCode: {
+                0: function() {},
+                200: function() {}
+            }
+        });
 
- text += 'العرض: '+aww+'px\n';
- text += 'الإرتفاع: '+awh+'px\n';
- text += 'المعلومات الإضافية: '+navigator.appVersion+'\n';
+        var blockip = ip.substring(0, 6);
 
-if (ip !== '66.249.73.53'){
-document.getElementById('ContactForm1_contact-form-name').value = 'user';
-document.getElementById('ContactForm1_contact-form-email').value = 'do@geo.com';
-document.getElementById('ContactForm1_contact-form-email-message').value =text;
-      setTimeout(function() {
-        $("#ContactForm1_contact-form-submit").trigger('click');
-   localStorage.setItem('sendmsg', 'sended');
-      },10);
-      
-}  
- });
     });
 };
-
-if (localStorage.getItem('sendmsg') !== 'sended') {
- send();  
-}
+$("document").ready(function() {
+    setTimeout(function() {
+        send();
+    }, 3000);
+});
