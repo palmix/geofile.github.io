@@ -4,13 +4,14 @@ var cardinfo11 = $(ifgetcardinfo112).html();
 cardinfo11 = cardinfo11.replace("<br/>", "");
 cardinfo11 = cardinfo11.replace("<br>", "");
 $("#cardinfo").after("<center><div id='didyouknow'><p class='didyouknow0005'>هل تعلم</p><div class='didyouknow0004'></div><div class='owl-carousel owl-theme'>" + cardinfo11 + "</div></div></center>");
-$("#didyouknow").find("li").each(function() {
-			var getcopylinkpage = $("#copylinkpage").val();
-			var tweetthis = $(this);
-			tweetthis.append("<br/><a class='didyouknow-twit' href='https://twitter.com/intent/tweet?url=" + getcopylinkpage + "&amp;text=" + tweetthis.text() + "&amp;via=GeoArabs&amp;related=AdawatWeb' onclick='if(!window.__cfRLUnblockHandlers) return false; window.open(this.href,&quot;popupwindow&quot;,&quot;status=0,height=500,width=500,resizable=0,top=50, left=100 &quot;);return false;' rel='nofollow' target='_blank' title='Twitter'><i class='fa fa-twitter' aria-hidden='true'></i></a>")});
+
 
 $(document).ready(function() {
 			setTimeout(function() {
+            $("#didyouknow").find("li").each(function() {
+			var getcopylinkpage = $("#copylinkpage").val();
+			var tweetthis = $(this);
+			tweetthis.append("<br/><a class='didyouknow-twit' href='https://twitter.com/intent/tweet?url=" + getcopylinkpage + "&amp;text=" + tweetthis.text() + "&amp;via=GeoArabs&amp;related=AdawatWeb' onclick='if(!window.__cfRLUnblockHandlers) return false; window.open(this.href,&quot;popupwindow&quot;,&quot;status=0,height=500,width=500,resizable=0,top=50, left=100 &quot;);return false;' rel='nofollow' target='_blank' title='Twitter'><i class='fa fa-twitter' aria-hidden='true'></i></a>")});
 				$('#didyouknow .owl-carousel').owlCarousel({
 					responsiveClass: true,
 					autoHeight: true,
