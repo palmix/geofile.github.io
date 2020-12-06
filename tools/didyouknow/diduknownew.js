@@ -19,5 +19,5 @@ $(document).ready(function() {
 		margin: 30,
 		nav: true,
 	})
-    }, 2000);
+    }, 500);
 })
