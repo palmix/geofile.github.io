@@ -70,7 +70,7 @@ noselectscard.onselectstart = new Function("return false"), window.sidebar && (n
 var cardinfo0 = document.getElementById("cardinfo0").innerHTML,
 	cardinfonume0 = cardinfo0.length;
 if (cardinfonume0 > 20) {
-	var cardinfonume0noimgurl = $("#cardinfo0").find("img").attr("src"),
+	var cardinfonume0noimgurl = $("#cardinfo0").find("img").prop("src"),
 		cardinfonume0noimgurls = cardinfonume0noimgurl.replace(/\/s200\/|\/s320\/|\/h120\/|\/s1600\//gi, "/w136-h136-p/"),
 		cardinfonume0noimgclass = document.getElementsByClassName("cardbackgroundimage")[0];
 	cardinfonume0noimgclass.style.backgroundImage = "url(" + cardinfonume0noimgurls + ")"
