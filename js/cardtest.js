@@ -46,7 +46,7 @@ var setcardinfo10 = document.getElementById("cardinfo10"),
 cardinfo10 = "+" === cardinfo10 ? "<span class='cardinfo_increase'>إزدياد</span>" : "-" === cardinfo10 ? "<span class='cardinfo_decreasing'>تناقص</span>" : "+-" === cardinfo10 ? "<span class='cardinfo_stable'>مستقر</span>" : "-+" === cardinfo10 ? "<span class='cardinfo_stable'>مستقر</span>" : "غير معروف";
 var cardinfo8_rs = $('#cardinfo8').find('img').prop('src');
 if(cardinfo8_rs == ''){
-var cardinfo8_rs = $('#cardinfo8').find('data-src').prop('src');
+var cardinfo8_rs = $('#cardinfo8').find('img').prop('data-src');
 }
 var cardinfo8_r = cardinfo8_rs.replace(/\/s200\/|\/s320\/|\/h120\/|\/s1600\//gi, '/s160/'),
 	setcardinfo8 = document.getElementById("cardinfo8"),
