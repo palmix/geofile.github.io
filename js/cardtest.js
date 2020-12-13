@@ -1,5 +1,3 @@
-$( document ).ready(function() {
-
 function disabletextselect() {
 	return !1
 }
@@ -46,7 +44,8 @@ else var cardinfo08 = "الحجم بالنسبة للإنسان";
 var setcardinfo10 = document.getElementById("cardinfo10"),
 	cardinfo10 = setcardinfo10.textContent;
 cardinfo10 = "+" === cardinfo10 ? "<span class='cardinfo_increase'>إزدياد</span>" : "-" === cardinfo10 ? "<span class='cardinfo_decreasing'>تناقص</span>" : "+-" === cardinfo10 ? "<span class='cardinfo_stable'>مستقر</span>" : "-+" === cardinfo10 ? "<span class='cardinfo_stable'>مستقر</span>" : "غير معروف";
-var cardinfo8_rs = $("#cardinfo8").find("img").attr("src"),
+var cardinfo8_rsc = $("#cardinfo8"),
+cardinfo8_rs = cardinfo8_rsc.find("img").attr("src"),
 	cardinfo8_r = cardinfo8_rs.replace(/\/s200\/|\/s320\/|\/h120\/|\/s1600\//gi, "/s160/"),
 	setcardinfo8 = document.getElementById("cardinfo8"),
 	cardinfo8 = '<img border="0" data-original-height="101" data-original-width="162" src="' + cardinfo8_r + '"/>',
@@ -77,4 +76,3 @@ if (cardinfonume0 > 20) {
 		cardinfonume0noimgclass = document.getElementsByClassName("cardbackgroundimage")[0];
 	cardinfonume0noimgclass.style.backgroundImage = "url(" + cardinfonume0noimgurls + ")"
 }
-});
