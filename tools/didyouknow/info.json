@@ -76,30 +76,37 @@
             "Question": "مقارنة الحجم",
             "Answer": "00000"
         },
-        "info1":{
+        "info1": {
             "Question": "معلومات اضافية 1",
             "Answer": "00000"
         },
-        "info2":{
+        "info2": {
             "Question": "معلومات اضافية 1",
             "Answer": "00000"
         },
-        "info3":{
+        "info3": {
             "Question": "معلومات اضافية 1",
             "Answer": "00000"
         },
-        "info4":{
+        "info4": {
             "Question": "معلومات اضافية 1",
             "Answer": "00000"
         },
-        "DidYouKnow":{
+        "DidYouKnow": {
             "Question": "هل تعلم",
-            "Answer": [
-            "1",
-            "2",
-            "3",
-            "4"
-        ]
+            "Answer": [{
+                    "info": "1"
+                },
+                {
+                    "info": "2"
+                },
+                {
+                    "info": "3"
+				},
+                {
+                    "info": "4"
+				}
+                ]
+            }
         }
     }
-}
