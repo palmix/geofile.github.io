@@ -9,7 +9,11 @@
             "Answer": "0000"
         },
         "Type": {
-            "Question": "النوع",
+            "Question": "الطائفة",
+            "Answer": "00000"
+        },
+        "Order": {
+            "Question": "الرتبة",
             "Answer": "00000"
         },
         "Diet": {
