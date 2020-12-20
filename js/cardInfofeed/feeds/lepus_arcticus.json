@@ -1,0 +1,105 @@
+{
+    "info": {
+        "CommonName": {
+            "Question": "الإسم",
+            "Answer": "أرنب القطب الشمالي"
+        },
+        "ScientificName": {
+            "Question": "الإسم العلمي",
+            "Answer": "Lepus arcticus"
+        },
+        "Type": {
+            "Question": "الطائفة",
+            "Answer": "الثدييات"
+        },
+        "Order": {
+            "Question": "الرتبة",
+            "Answer": "00000"
+        },
+        "Diet": {
+            "Question": "النظام الغذائي",
+            "Answer": "آكل أعشاب"
+        },
+        "Age": {
+            "Question": "متوسط العمر",
+            "Answer": "3–8 عام"
+        },
+        "Size": {
+            "Question": "الحجم",
+            "Answer": "45–67 سنتيمتر"
+        },
+        "Weight": {
+            "Question": "الوزن",
+            "Answer": "3–6.5 كيلوغرام"
+        },
+        "PopulationTrend": {
+            "Question": "إتجاه السكان الحالي",
+            "Answer": "مستقر"
+        },
+        "RedList": {
+            "Question": "حالة القائمة الحمراء (IUCN)",
+            "Answer": "1"
+        },
+        "Speed": {
+            "Question": "السرعة",
+            "Answer": "64 كم/ساعة"
+        },
+        "DurationPregnancy": {
+            "Question": "مدة الحمل",
+            "Answer": "50 يوم"
+        },
+        "NumBirths": {
+            "Question": "عدد الصغار",
+            "Answer": "6"
+        },
+        "Subfamily": {
+            "Question": "الفصيلة",
+            "Answer": "الأرنبيات"
+        },
+        "EcologicalHabitat": {
+            "Question": "الموطن البيئي",
+            "Answer": "المناطق القطبية والمناطق الصخرية"
+        },
+        "Color": {
+            "Question": "الألوان",
+            "Answer": "أبيض- رمادي"
+        },
+        "Enemy": {
+            "Question": "الأعداء",
+            "Answer": "البومة الثلجية- الثعالب- الذئاب"
+        },
+        "FeedOn": {
+            "Question": "الغذاء",
+            "Answer": "الأعشاب- الزهور- الصفصاف"
+        },
+        "Img": {
+            "Question": "صورة الحيوان",
+            "Answer": "https://lh3.googleusercontent.com/-A4FxwHqRQRk/X8eNLf5sgMI/AAAAAAAAFY0/Zn_60pmcfm0CTf394pv4wRZDMCbznqe6wCLcBGAsYHQ/h120/arctic-hare_thumb.jpg"
+        },
+        "ImgSizeComparison": {
+            "Question": "مقارنة الحجم",
+            "Answer": "https://lh3.googleusercontent.com/-UL8EVJRbenc/X8eNC29FklI/AAAAAAAAFYk/DzMlWBVJL1UZxHZNuoXrFkhXqmdTb7bEQCLcBGAsYHQ/h120/arctic-hare_size.gif"
+        },
+        "info1": {
+            "Question": "صغير الأرنب",
+            "Answer": "خرنق"
+        },
+        "info2": {
+            "Question": "صوت الأرنب",
+            "Answer": "ضغيب"
+        },
+        "DidYouKnow": {
+            "Question": "هل تعلم",
+            "Answer": [{
+                    "info": "تقف الأرانب القطبية الشمالية على أرجلها الخلفية لمراقبة الحيوانات المفترسة."
+                },
+                {
+                    "info": "تتغذى الأرانب القطبية الشمالية في الغالب على صفصاف القطب الشمالي ، وتخرجها من تحت الثلج."
+                },
+                {
+                    "info": "الأرانب الصغيرة في القطب الشمالي بنية اللون. تتحول إلى اللون الأبيض في ما يقارب 4 أسابيع."
+				}
+                ]
+            }
+        }
+    }
