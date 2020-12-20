@@ -14,7 +14,7 @@
         },
         "Order": {
             "Question": "الرتبة",
-            "Answer": "أرنبيات الشكل"
+            "Answer": "00000"
         },
         "Diet": {
             "Question": "النظام الغذائي",
@@ -87,6 +87,14 @@
         "info2": {
             "Question": "صوت الأرنب",
             "Answer": "ضغيب"
+        },
+        "info3": {
+            "Question": "00000",
+            "Answer": "00000"
+        },
+        "info4": {
+            "Question": "00000",
+            "Answer": "00000"
         },
         "DidYouKnow": {
             "Question": "هل تعلم",
