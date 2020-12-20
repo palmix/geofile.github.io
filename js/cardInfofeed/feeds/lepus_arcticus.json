@@ -34,11 +34,13 @@
         },
         "PopulationTrend": {
             "Question": "إتجاه السكان الحالي",
-            "Answer": "مستقر"
+            "Answer": "مستقر",
+			"Num": "+-"
         },
         "RedList": {
             "Question": "حالة القائمة الحمراء (IUCN)",
-            "Answer": "1"
+            "Answer": "1",
+			"Num": "1"
         },
         "Speed": {
             "Question": "السرعة",
