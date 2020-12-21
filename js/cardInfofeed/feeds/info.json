@@ -2,7 +2,8 @@
     "info": {
         "CommonName": {
             "Question": "الإسم",
-            "Answer": "0000"
+            "Answer": "0000",
+            "Answer_En": "0000"
         },
         "ScientificName": {
             "Question": "الإسم العلمي",
