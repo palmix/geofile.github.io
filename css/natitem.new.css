@@ -1048,10 +1048,10 @@ blockquote .line-highlight {
         bottom: 136px;
         opacity: 1
     }
-    .title-summ .titlePostbp a:link,
-    .title-summ .titlePostbp a:visited {
-        color: #ffffff;
-    }
+
+.title-summ a:link, .title-summ a:visited {
+    color: #ffffff;
+}
 }
 
 
