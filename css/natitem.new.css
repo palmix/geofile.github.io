@@ -909,7 +909,7 @@ blockquote .line-highlight {
     }
     .title-summ .titlePostbp a:link,
     .title-summ .titlePostbp a:visited {
-        color: #ffffff;
+        color: #000;
     }
 }
 
