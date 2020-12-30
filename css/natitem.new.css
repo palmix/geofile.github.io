@@ -902,15 +902,7 @@ blockquote .line-highlight {
 }
 @media screen and (max-width:600px) {
 
-    .menu li a,
-    .title-summ a:link,
-    .title-summ a:visited {
-        color: #fff;
-    }
-    .title-summ .titlePostbp a:link,
-    .title-summ .titlePostbp a:visited {
-        color: #000;
-    }
+
 }
 
 @media screen and (max-width:420px) {
