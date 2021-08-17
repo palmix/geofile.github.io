@@ -66,6 +66,7 @@ var PhotoSwipeUI_Default =
 			captionEl: true,
 			fullscreenEl: true,
 			zoomEl: true,
+			downloadEl: true,
 			shareEl: false,
 			counterEl: true,
 			arrowEl: true,
@@ -84,6 +85,9 @@ var PhotoSwipeUI_Default =
 				{id:'download', label:'Download image', url:'{{raw_image_url}}', download:true}
 			],
 			getImageURLForShare: function( /* shareButtonData */ ) {
+				return pswp.currItem.src || '';
+			},
+   			getImageURLDownload: function( /* shareButtonData */ ) {
 				return pswp.currItem.src || '';
 			},
 			getPageURLForShare: function( /* shareButtonData */ ) {
@@ -154,11 +158,45 @@ var PhotoSwipeUI_Default =
 		},
 		_togglePswpClass = function(el, cName, add) {
 			framework[ (add ? 'add' : 'remove') + 'Class' ](el, 'pswp__' + cName);
+
 		},
 
 		// add class when there is just one item in the gallery
 		// (by default it hides left/right arrows and 1ofX counter)
 		_countNumItems = function() {
+
+
+
+
+
+
+
+
+
+
+setTimeout(function(){ 
+try{
+$('.pswp__button--download').removeClass("d-none");
+var image_url_d = _options.getImageURLDownload();
+var title = $('.pswp__button--download').attr('data-title');
+var title1 = Date.now();
+title1 = 'g'+title1;
+title1 = title1.slice(7);
+title1 = "GeoArabic-"+title1;
+title = title + "-" +title1
+$('.pswp__button--download').attr("onclick","forceDownload('"+image_url_d+"', '"+title+"')");
+}catch(e){
+$('.pswp__button--download').addClass("d-none");
+console.log(e);
+}	
+
+}, 100);
+
+
+
+
+			
+
 			var hasOneSlide = (_options.getNumItemsFn() === 1);
 
 			if(hasOneSlide !== _galleryHasOneSlide) {
@@ -189,11 +227,12 @@ var PhotoSwipeUI_Default =
 					}
 				}, 300);
 			}
-			
+
 			if(!_shareModalHidden) {
 				_updateShareURLs();
 			}
 			return false;
+
 		},
 
 		_openWindowPopup = function(e) {
@@ -213,7 +252,6 @@ var PhotoSwipeUI_Default =
 			window.open(target.href, 'pswp_share', 'scrollbars=yes,resizable=yes,toolbar=no,'+
 										'location=yes,width=550,height=420,top=100,left=' + 
 										(window.screen ? Math.round(screen.width / 2 - 275) : 100)  );
-
 			if(!_shareModalHidden) {
 				_toggleShareModal();
 			}
@@ -244,6 +282,7 @@ var PhotoSwipeUI_Default =
 									'class="pswp__share--' + shareButtonData.id + '"' +
 									(shareButtonData.download ? 'download' : '') + '>' + 
 									shareButtonData.label + '</a>';
+
 
 				if(_options.parseShareButtonOut) {
 					shareButtonOut = _options.parseShareButtonOut(shareButtonData, shareButtonOut);
@@ -413,9 +452,8 @@ var PhotoSwipeUI_Default =
 				}
 			});
 
+
 		};
-
-
 
 	var _uiElements = [
 		{ 
@@ -461,6 +499,11 @@ var PhotoSwipeUI_Default =
 			name: 'button--close', 
 			option: 'closeEl',
 			onTap: pswp.close
+		},
+		{ 
+			name: 'button--download', 
+			option: 'downloadEl',
+			onTap: ''
 		},
 		{ 
 			name: 'button--arrow--left', 
