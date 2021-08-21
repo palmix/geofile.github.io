@@ -185,6 +185,7 @@ title1 = title1.slice(7);
 title1 = "GeoArabic-"+title1;
 title = title + "-" +title1
 $('.pswp__button--download').attr("onclick","forceDownload('"+image_url_d+"', '"+title+"')");
+$('#link_android_download').attr('href',image_url_d+'#download_img_android');
 }catch(e){
 $('.pswp__button--download').addClass("d-none");
 console.log(e);
