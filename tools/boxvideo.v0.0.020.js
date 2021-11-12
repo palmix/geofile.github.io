@@ -226,7 +226,7 @@ document.getElementById('VAndD').innerHTML = '<iframe width="100%" height="100%"
    if (videoIDGoogleDrive !== novid){
 
  function changeVideoGoogleDrive(changevideoID) {
- document.getElementById('VAndD').innerHTML = '<iframe width="100%" height="100%" src="//drive.google.com/file/d/'+videoIDGoogleDrive+'/preview" frameborder="0" allowfullscreen></iframe>';
+ document.getElementById('VAndD').innerHTML = '<iframe width="100%" height="100%" src="//drive.google.com/file/d/'+videoIDGoogleDrive+'/preview" allow="autoplay" frameborder="0" allowfullscreen></iframe>';
 
  }  
     btnvideoshow += '<div class="itembtnshowvideo"><a class="btnshowvideo" href="javascript:changeVideoGoogleDrive(changevideoID);"></a></div>';
