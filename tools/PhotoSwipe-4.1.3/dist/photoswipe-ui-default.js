@@ -180,7 +180,7 @@ $('.pswp__button--download').removeClass("d-none");
 var image_url_d = _options.getImageURLDownload();
 var title = $('.pswp__button--download').attr('data-title');
 var nomIndex = pswp.getCurrentIndex()+1;
-title = "GeoArabic-"+title+"-"+nomIndex;
+title = title + "-GeoArabic-"+"-"+nomIndex;
 $('.pswp__button--download').attr("onclick","forceDownload('"+image_url_d+"', '"+title+"')");
 $('#link_android_download').attr('href',image_url_d+'#download_img_android');
 }catch(e){
