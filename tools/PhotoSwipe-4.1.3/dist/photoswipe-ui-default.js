@@ -758,6 +758,10 @@ console.log(e);
 			_indexIndicator.innerHTML = (pswp.getCurrentIndex()+1) + 
 										_options.indexIndicatorSep + 
 										_options.getNumItemsFn();
+										console.log(_options.counterEl+"<br>");
+										console.log(pswp.getCurrentIndex()+1+"<br>");
+										console.log(_options.indexIndicatorSep+"<br>");
+										console.log(_options.getNumItemsFn()+"<br>");
 		}
 	};
 	
