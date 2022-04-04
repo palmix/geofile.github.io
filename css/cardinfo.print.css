@@ -1,1 +1,225 @@
- @font-face { font-family: 'Droid Arabic Kufi'; font-style: normal; font-weight: 400; src: local('Droid Arabic Kufi'), local('DroidArabicKufi'), url(https://fonts.gstatic.com/s/droidarabickufi/v14/Jqz55SSYU-eQEShJr-lgfq7iVlT4aJ9Dayoxdg.woff2) format('woff2'); unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC; font-display: swap; } /* arabic */ @font-face { font-family: 'Droid Arabic Naskh'; font-style: normal; font-weight: 400; src: local('Droid Arabic Naskh'), local('DroidArabicNaskh'), url(https://fonts.gstatic.com/s/droidarabicnaskh/v16/TUZtzxFuuf5P22-K39H2ZKe6N_R0vg36-0F8cTc.woff2) format('woff2'); unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC; font-display: swap; } .post #cardinfo { background-color: #ffffff; margin-top: 0; padding: 0; margin-bottom: 0; max-width: 100%; border: none; border-radius: 0; box-shadow: none; } #cardinfo a{ text-decoration: none; } .btndown { color: #999999; margin-bottom: -10px; } .btndown:hover { color: #000000; } .Infoaboutpublisher { background: #f3f3f3; padding: 15px; border-radius: 6px; } .avatar { vertical-align: middle; width: 50px; height: 50px; border-radius: 50%; } .sharer { color: #464646; font-size:1.5rem; padding:0 7px; display: inline-block; } .sharer.sharer-fb:hover { color: #395796; } .sharer.sharer-tw:hover { color: #4cb0ea; } .sharer.sharer-wa:hover { color: #128C7E; } .sharer.sharer-copy { font-size:1.3rem; cursor: pointer; } .sharer.sharer-copy:hover { color:#f75b00; } #cardinfo hr { background-color: #969696; } #fixedcopy { position: fixed; bottom: -50px; width: 100%; text-align: center; opacity:0; transition: bottom .25s; z-index: 9999; } .fixedcopy { margin: 0 auto; max-width: 200px; border-radius: 3px; } .alertp { font-size: .9rem; } .fspcard { font-size: .8rem!important; } .codeColor{ color:#dddddd } .facebookColor{ color:#1977f3 } .twitterColor{ color:#1da1f2 } .emailColor{ color:#888888 } .whatsappColor{ color:#15ba6a } .linkColor{ color:#ff9900 } #btnsshare .active,#btnsshare .btn:hover { background-color: #b9b9b9; color: white; } #btnsshare a i:hover{ background-color: #ddd; color: #000; } #btnsshare a i:active{ background-color:#b9b9b9; } #btnsshare a{ text-decoration: none; } #carouselImg .owl-dots { position: relative; margin-top: -37px; } #carouselImg .owl-theme .owl-nav { font-size: 60px; } #carouselImg span.fa-stack.fs-4 { margin-top: 37px; } #carouselImg .fa-stack .fa-stack-2x { color: #cecece4d !important; } .modal.fade{ background-color: #000001bf; background-color: rgb(0 0 1 / 75%); } .cardbackgroundimage { position: static; display: flex; margin: 0 auto; } .incardbackgroundimage { float: none; padding:50px; } .adsTopCard,.item.dukText .text-center{ display:none; } .item.dukText{ list-style-type: none; font-family: 'droid arabic naskh', Arial, sans-serif; padding: 10px; } #adSlotTop1,#adSlotTop2,#adSlotTop3{ display:none; } .factsKeyValue_card button{ display:none; } .cardbody{max-width:900px;}body{-webkit-print-color-adjust: exact !important;}.card {display: flex; word-wrap: break-word; background-color: #fff; background-clip: border-box; border: 1px solid rgba(0,0,0,.125); border-radius: 0.25rem; }.row.row-cols-1.row-cols-md-2.row-cols-sm-2.g-2.mt-2{ width: 300px!important;display:inline-flex;}.container.overflow-hidden{width:100%}
+ @font-face {
+     font-family: 'Droid Arabic Kufi';
+     font-style: normal;
+     font-weight: 400;
+     src: local('Droid Arabic Kufi'), local('DroidArabicKufi'), url(https://fonts.gstatic.com/s/droidarabickufi/v14/Jqz55SSYU-eQEShJr-lgfq7iVlT4aJ9Dayoxdg.woff2) format('woff2');
+     unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+     font-display: swap;
+ }
+
+ /* arabic */
+ @font-face {
+     font-family: 'Droid Arabic Naskh';
+     font-style: normal;
+     font-weight: 400;
+     src: local('Droid Arabic Naskh'), local('DroidArabicNaskh'), url(https://fonts.gstatic.com/s/droidarabicnaskh/v16/TUZtzxFuuf5P22-K39H2ZKe6N_R0vg36-0F8cTc.woff2) format('woff2');
+     unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+     font-display: swap;
+ }
+
+ .post #cardinfo {
+     background-color: #ffffff;
+     margin-top: 0;
+     padding: 0;
+     margin-bottom: 0;
+     max-width: 100%;
+     border: none;
+     border-radius: 0;
+     box-shadow: none;
+ }
+
+ #cardinfo a {
+     text-decoration: none;
+ }
+
+ .btndown {
+     color: #999999;
+     margin-bottom: -10px;
+ }
+
+ .btndown:hover {
+     color: #000000;
+ }
+
+ .Infoaboutpublisher {
+     background: #f3f3f3;
+     padding: 15px;
+     border-radius: 6px;
+ }
+
+ .avatar {
+     vertical-align: middle;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+ }
+
+ .sharer {
+     color: #464646;
+     font-size: 1.5rem;
+     padding: 0 7px;
+     display: inline-block;
+ }
+
+ .sharer.sharer-fb:hover {
+     color: #395796;
+ }
+
+ .sharer.sharer-tw:hover {
+     color: #4cb0ea;
+ }
+
+ .sharer.sharer-wa:hover {
+     color: #128C7E;
+ }
+
+ .sharer.sharer-copy {
+     font-size: 1.3rem;
+     cursor: pointer;
+ }
+
+ .sharer.sharer-copy:hover {
+     color: #f75b00;
+ }
+
+ #cardinfo hr {
+     background-color: #969696;
+ }
+
+ #fixedcopy {
+     position: fixed;
+     bottom: -50px;
+     width: 100%;
+     text-align: center;
+     opacity: 0;
+     transition: bottom .25s;
+     z-index: 9999;
+ }
+
+ .fixedcopy {
+     margin: 0 auto;
+     max-width: 200px;
+     border-radius: 3px;
+ }
+
+ .alertp {
+     font-size: .9rem;
+ }
+
+ .fspcard {
+     font-size: .8rem !important;
+ }
+
+ .codeColor {
+     color: #dddddd
+ }
+
+ .facebookColor {
+     color: #1977f3
+ }
+
+ .twitterColor {
+     color: #1da1f2
+ }
+
+ .emailColor {
+     color: #888888
+ }
+
+ .whatsappColor {
+     color: #15ba6a
+ }
+
+ .linkColor {
+     color: #ff9900
+ }
+
+ #btnsshare .active,
+ #btnsshare .btn:hover {
+     background-color: #b9b9b9;
+     color: white;
+ }
+
+ #btnsshare a i:hover {
+     background-color: #ddd;
+     color: #000;
+ }
+
+ #btnsshare a i:active {
+     background-color: #b9b9b9;
+ }
+
+ #btnsshare a {
+     text-decoration: none;
+ }
+
+ #carouselImg .owl-dots {
+     position: relative;
+     margin-top: -37px;
+ }
+
+ #carouselImg .owl-theme .owl-nav {
+     font-size: 60px;
+ }
+
+ #carouselImg span.fa-stack.fs-4 {
+     margin-top: 37px;
+ }
+
+ #carouselImg .fa-stack .fa-stack-2x {
+     color: #cecece4d !important;
+ }
+
+ .modal.fade {
+     background-color: #000001bf;
+     background-color: rgb(0 0 1 / 75%);
+ }
+
+
+
+ .adsTopCard,
+ .item.dukText .text-center {
+     display: none;
+ }
+
+ .item.dukText {
+     list-style-type: none;
+     font-family: 'droid arabic naskh', Arial, sans-serif;
+     padding: 10px;
+ }
+
+ #adSlotTop1,
+ #adSlotTop2,
+ #adSlotTop3 {
+     display: none;
+ }
+
+ .factsKeyValue_card button {
+     display: none;
+ }
+
+ .cardbody {
+     max-width: 900px;
+ }
+
+ body {
+     -webkit-print-color-adjust: exact !important;
+ }
+
+ .card {
+     display: flex;
+     word-wrap: break-word;
+     background-color: #fff;
+     background-clip: border-box;
+     border: 1px solid rgba(0, 0, 0, .125);
+     border-radius: 0.25rem;
+ }
+
+ .row.row-cols-1.row-cols-md-2.row-cols-sm-2.g-2.mt-2 {
+     width: 300px !important;
+     display: inline-flex;
+ }
+
+ .container.overflow-hidden {
+     width: 100%
+ }
