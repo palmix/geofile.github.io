@@ -1,3 +1,4 @@
+//box
 var gettdvideoID = document.getElementById('tdvideoID');
 var gettdvideo2ID = document.getElementById('tdvideo2ID');
 var gettdvideoIDOk = document.getElementById('tdvideoIDOk');
